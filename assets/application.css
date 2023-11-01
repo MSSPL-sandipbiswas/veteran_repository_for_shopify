@@ -30,6 +30,7 @@ html {
     font-style: normal;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family:var( --font-primary);
 }
 
 @font-face {
@@ -116,7 +117,7 @@ html {
     content: "\e90c";
 }
 
-
+body{ font-family:var( --font-primary);}
 .primary-navigation {
     height: 10.5rem;
 }
