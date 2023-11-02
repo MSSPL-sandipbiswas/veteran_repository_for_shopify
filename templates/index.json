@@ -8,9 +8,9 @@
     "homeabout": {
       "type": "homeabout",
       "settings": {
-        "subheading": "",
-        "mainheading": "",
-        "contentsection": "",
+        "subheading": "Gift Of Realising Your Dream!",
+        "mainheading": "WE ARE DISTRIBUTER OF FOREIGN & DOMESTIC AUTO UPHOLSTERY SUPPLIES",
+        "contentsection": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan porttitor aliquet. Etiam volutpat iaculis velit non eleifend. Maecenas mauris quam, ultricies sed tristique a, maximus vel sem. Sed euismod nunc et nunc sodales posuere. Etiam volutpat iaculis velit non eleifend. Maecenas mauris quam,<\/p><p><strong>Aliquam erat volutpat. Aenean non facilisis felis. Proin convallis sem mi, non porttitor tortor bibendum vel. Etiam volutpat iaculis velit non eleifend<\/strong><\/p>",
         "buttonlink": "shopify:\/\/pages\/about",
         "leftimage": "shopify:\/\/shop_images\/home-about-left-image.jpg"
       }
