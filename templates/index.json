@@ -1,12 +1,23 @@
 {
-    "sections": {
-        "homebanner":{
-            "type": "homebanner"
-        },
-        "homeabout":{
-            "type": "homeabout"
-        }
+  "sections": {
+    "homebanner": {
+      "type": "homebanner",
+      "settings": {
+      }
     },
-    "order": ["homebanner" , "homeabout"]
-
+    "homeabout": {
+      "type": "homeabout",
+      "settings": {
+        "subheading": "",
+        "mainheading": "",
+        "contentsection": "",
+        "buttonlink": "shopify:\/\/pages\/about",
+        "leftimage": "shopify:\/\/shop_images\/home-about-left-image.jpg"
+      }
+    }
+  },
+  "order": [
+    "homebanner",
+    "homeabout"
+  ]
 }
