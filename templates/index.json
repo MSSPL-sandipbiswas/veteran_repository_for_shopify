@@ -12,10 +12,21 @@
             "bannersubheading": "Supplies",
             "link": "shopify:\/\/pages\/product"
           }
+        },
+        "12344cca-27c3-41d6-9582-615819a6a46b": {
+          "type": "slideimage-block",
+          "settings": {
+            "slideimage": "shopify:\/\/shop_images\/blog-image-4.jpg",
+            "bannershortcontent": "We are Distributer of <span>Foreign & Domestic<\/span>",
+            "bannerheading": "Auto <span>Pollsters<\/span>",
+            "bannersubheading": "Distributer",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "180429b8-2df0-49da-9aea-a5b909ad711b"
+        "180429b8-2df0-49da-9aea-a5b909ad711b",
+        "12344cca-27c3-41d6-9582-615819a6a46b"
       ],
       "settings": {
       }
