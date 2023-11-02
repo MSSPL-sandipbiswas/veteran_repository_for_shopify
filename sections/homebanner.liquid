@@ -1,1 +1,78 @@
-home banner
+<div class="swiper banner-section">
+        <div class="hero_slider swiper-wrapper">
+            {% for block in section.blocks %}
+                <div class="swiper-slide hero_slider_loop relative {{ block.type }}">
+                    <div class="hero_slider_container absolute flex items-center">
+                        <div class="container mx-auto">
+                            <div class="hero_slider_content relative">
+                                <div class="hero_slider_content_sec">
+                                    {% if block.settings.bannerheading %}
+                                        <div class="banner_short_content" data-swiper-parallax="-300" data-swiper-parallax-duration="1500" data-swiper-parallax-opacity="0">{{ block.settings.bannershortcontent }}</div>
+                                    {% endif %}
+                                    {% if block.settings.bannerheading %}
+                                        <div class="banner_heading" data-swiper-parallax="-200" data-swiper-parallax-duration="1500" data-swiper-parallax-opacity="0"> {{ block.settings.bannerheading }}</div>
+                                    {% endif %}
+                                    {% if block.settings.bannersubheading %}
+                                        <div class="bannre_sub_heaing" data-swiper-parallax="-100" data-swiper-parallax-duration="1500" data-swiper-parallax-opacity="0">{{ block.settings.bannersubheading }}</div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.link %}
+                                    <div data-swiper-parallay="10%" data-swiper-parallax-scale="0.15" data-swiper-parallax-duration="1500" data-swiper-parallax-opacity="0">
+                                        <a class="button button-com button-sloid button-sloid-hover" href="{{ block.settings.link }}" target=""><div><span>SHOP NOW</span><span>SHOP NOW</span></div></a>
+                                    </div>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                    {% if block.settings.slideimage %}
+                        <figure  data-swiper-parallax="-10" data-swiper-parallax-duration="3500" data-swiper-parallax-opacity="0" class="hero_image" >
+                            {{ block.settings.slideimage | img_url: 'master' | img_tag}}
+                        </figure>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+{% schema %}
+    {
+      "name": "Home Slider",
+      "max_blocks": 6,
+      "blocks": [
+        {
+          "type": "slideimage-block",
+          "name": "Slide",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "slideimage",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "bannershortcontent",
+              "label": "Banner Short Content"
+            },
+            {
+              "type": "text",
+              "id": "bannerheading",
+              "label": "Banner Heading"
+            },
+            {
+              "type": "text",
+              "id": "bannersubheading",
+              "label": "Banner Sub Heading"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Link URL"
+            }
+          ]
+        }
+      ]
+    }
+  {% endschema %}

@@ -1,0 +1,72 @@
+<div class="home-about-section about-section">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-2 gap-6">
+            <div class="about__left_image_section">
+                <div class="hom_about_image_sec relative">
+                    {% if section.settings.leftimage %}
+                        <figure class="left_image relative columns-11 object-fit-img img_sec aos-init aos-animate">
+                            {{ section.settings.leftimage | image_url: width: 805 | image_tag }}
+                        </figure>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="about_right__content_section">
+                <div class="pl-65 pr-5">
+                    <header>
+                        {%  if section.settings.subheading %}
+                            <span class="sub_heading_com sub_heading_com_ani">
+                                {{ section.settings.subheading}}
+                            </span>
+                        {% endif %} 
+                        <h1 class="heading-com-42 text-blue text-uppercase">{{ section.settings.mainheading}}</h1>
+                        {%  if section.settings.contentsection %}  
+                            <div class="about_content com-font aos-init aos-animate">
+                                {{ section.settings.contentsection}}
+                            </div>
+                        {% endif %}
+                        {% if section.settings.buttonlink %}
+                            <div class="button-section aos-init aos-animate">
+                                <a href="{{ section.settings.buttonlink}}" class="button button-com button-outline">Read More</a>
+                            </div>
+                        {% endif %}
+                        
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Home About Section",
+        "settings": [
+                {
+                    "type": "text",
+                    "id": "subheading",
+                    "label": "Sub Heading"
+                },
+                {
+                    "type": "text",
+                    "id": "mainheading",
+                    "label": "Heading"
+                },
+                {
+                    "type": "richtext",
+                    "id": "contentsection",
+                    "label": "Content Section"
+                },
+                {
+                    "type": "url",
+                    "id": "buttonlink",
+                    "label": "Button Link"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "leftimage",
+                    "label": "Left Top Image"
+                }
+            ]
+    }
+{% endschema %}
