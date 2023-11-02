@@ -30,6 +30,7 @@ html {
     font-style: normal;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family:var( --font-primary);
 }
 
 @font-face {
@@ -116,6 +117,37 @@ html {
     content: "\e90c";
 }
 
+body{ font-family:var( --font-primary);}
+
+.button-com{ display:flex; align-items: center; justify-content:center; height:5.5rem; text-align: center; width: 100%; max-width: 17.4rem; letter-spacing: 0.1em; text-transform:uppercase;font-weight: 700; font-size: var(--font-16); color:var(--color-blue);position: relative;transform: translate3d(0px, 0%, 0px);transition-delay: .6s;overflow: hidden}
+.button-sloid:before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%; background-color:var(--color-skyblue); border-radius: 50% 20% 0 0;transform: translateY(100%) scaleY(.5);transition: all .6s ease;}
+.button-sloid:after{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: white;border-radius: 0;transform: translateY(0) scaleY(1);transition: all .6s ease;}
+.button-sloid div{position: relative;top: 0;width: 100%;height:5.5rem;text-transform: uppercase;overflow: hidden}
+.button-sloid span{position: absolute;z-index: 1;top: 0;width: 100%; left: 0; height: 100%; display: flex; justify-content: center; align-items: center; text-align: center;transition: transform .5s ease}
+.button-sloid span:first-child{color: white;transform: translateY(5.5rem)}
+.button-sloid span:last-child{color: #1E0F21;transform: translateY(0)}
+.button-sloid{ background-color:var(--color-white); border:none; outline:none; }
+.button-sloid:hover{background:var(--color-skyblue);transition: background .2s linear;transition-delay: .6s;}
+.button-sloid:hover:after{border-radius: 0 0 50% 50% ;transform: translateY(-100%) scaleY(.5);transition-delay: 0}
+.button-sloid:hover:before{border-radius: 0;transform: translateY(0) scaleY(1);transition-delay: 0;}
+.button-sloid:hover span:first-child{transform: translateY(0)}
+.button-sloid:hover span:last-child{transform: translateY(-5.5rem)}
+
+.button-outline {box-shadow: inset 0 0 0 0.1rem var(--color-blue);transition: color 0.25s 0.0833333333s;position:relative;}
+.button-outline::before, .button-outline::after {border: 0 solid transparent;box-sizing: border-box;content: "";pointer-events: none;position: absolute;width: 0;height: 0;bottom: 0;right: 0; z-index: 2}
+.button-outline::before {border-bottom-width: 0.1rem;border-left-width:0.1rem;}
+.button-outline::after {border-top-width:0.1rem;border-right-width:0.1rem;}
+.button-outline:hover{color: var(--color-skyblue);}
+.button-outline:hover::before, .button-outline:hover::after {border-color:var(--color-skyblue);transition: border-color 0s, width 0.25s, height 0.25s;width: 100%;height: 100%;}
+.button-outline:hover::before {transition-delay: 0s, 0s, 0.25s;}
+.button-outline:hover::after {transition-delay: 0s, 0.25s, 0s;}
+
+.sub_heading_com:before,.woocommerce-thankyou-order-received:before{ border-bottom:0.1rem solid #4D4E4F; content:''; display:inline-block; vertical-align:middle; width:5rem; margin-right:1.6rem }
+
+.sub_heading_com.sub_heading_com_ani:before{transform: scaleX(0);transform-origin: left;transition: 0.5s;}
+.sub_heading_com.sub_heading_com_ani:before{transform: scaleX(1); transition-delay: 0.1s}
+
+
 
 .primary-navigation {
     height: 10.5rem;
@@ -154,3 +186,223 @@ html {
 .navopction_menu li a:hover {
     color: var(--color-skyblue);
 }
+
+
+/*-----------------------------------------------------------------
+ 3. >>> Home About Style
+----------------------------------------------------------------*/
+.home-about-section {
+    padding-top: 10.0rem;
+    padding-bottom: 10.0rem
+}
+
+.hom_about_image_sec {
+    min-height: 74.1rem
+}
+
+.left_image {
+    height: 53.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.our_mission_image_loop figure {
+    overflow: hidden;
+    position: relative;
+    height: 36.0rem
+}
+
+.left_image img,.our_mission_image_loop img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+}
+
+.right_image {
+    height: 39.4rem;
+    width: 46%;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 0.3rem solid var(--color-white);
+}
+
+.number_loop_sec_2 {
+    background-color: #262834;
+    border: 0.3rem solid var(--color-white);
+    width: 17.6rem;
+    height: 17.0rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    justify-content: center;
+    padding: 3rem;
+    position: absolute;
+    left: 21.5rem;
+    bottom: 7.8rem
+}
+
+.number_se {
+    color: var(--color-skyblue);
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.info_se {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: var(--font-24);
+    line-height: 2.9rem
+}
+
+.number_loop_sec_2 .number_se {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.number_loop_sec_2 .info_se {
+    color: var(--color-white);
+}
+
+.number_loop_sec_1 .number_se {
+    font-size: 4rem;
+    line-height: 4.5rem
+}
+
+.number_loop_sec_1 .info_se {
+    color: #262834;
+    margin-left: 1.2rem
+}
+
+.number_loop_sec_1 .number_loop_sec_inn {
+    display: flex;
+    align-items: center;
+    width: 20.5rem;
+    padding-top: 2.4rem
+}
+
+/*-----------------------------------------------------------------
+ 2. >>> Hero Slider Style
+----------------------------------------------------------------*/
+/*.banner-section{ margin-top:10.5rem }*/
+.banner-section{ background-color:var(--color-blue); }
+.hero_slider_container{ top:50%; left:0; height:100%; width:100%; transform:translateY(-50%); z-index:3 }
+.hero_slider_container:before{ content:''; position:absolute; width:100%; height:100%;background: linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0) 100%); left:0; right:0; top:0 }
+ .hero_slider_container:after{ content:'';background: linear-gradient(61.12deg, rgba(0, 0, 0, 0.61) 1.09%, rgba(0, 0, 0, 0) 78.31%);opacity: 0.8; position:absolute; left:0; top:0; height:100%; width:70% }
+.hero_slider_content{ color:var(--color-white);font-family: 'Barlow Condensed', sans-serif; font-weight:400;text-transform:uppercase; z-index:1 }
+.hero_slider_content span{ color:var(--color-skyblue); }
+.banner_short_content{ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);letter-spacing: 0.095em; font-size:var(--font-24); line-height:4.2rem }
+.banner_heading{letter-spacing: 0.01em;font-weight: 500; font-size: var(--font-67); line-height: 7.3rem}
+.banner_heading span{font-style: italic;font-weight: 800;letter-spacing: 0.01em;}
+.bannre_sub_heaing{letter-spacing: 0.52em;font-weight: 600; font-size: var(--font-59); line-height: 7.3rem}
+.hero_slider_content_sec{ padding-bottom:7.5rem }
+.hero_slider_loop{ width:100%; height:100% }
+.hero_image{ height:67.3rem; }
+.hero_image img{ height:100%; object-fit:cover; width: 100%; }
+.banner-section .swiper-pagination-bullet{ width:1rem; height:1rem; border-radius:0; background-color:transparent;border:0.2rem solid rgba(255, 255, 255, 0.5); }
+.banner-section .swiper-pagination-bullet.swiper-pagination-bullet-active{border:0.2rem solid rgba(255, 255, 255, 1);}
+.banner-section .swiper-horizontal>.swiper-pagination-bullets, .banner-section .swiper-pagination-bullets.swiper-pagination-horizontal, .banner-section .swiper-pagination-custom, .swiper-pagination-fraction{ bottom:3rem }
+
+.home_main_section{ position:relative; z-index:1; background-color:var(--color-white);}
+/*-----------------------------------------------------------------
+ 3. >>> Home Markets Style
+----------------------------------------------------------------*/
+.home_markets_section {
+    background-color: var(--color-blue);
+    padding-bottom: 6.6rem;
+    padding-top: 7rem;
+    overflow: hidden;
+    min-height: 103.6rem;
+    z-index: 1
+}
+
+.markets_section_header .heading-com-42 {
+    margin-bottom: 0
+}
+
+.markets_section_header {
+    padding-bottom: 6.5rem
+}
+
+.markets_section_header .sub_heading_com {
+    color: var(--color-white);
+}
+
+.markets_section_header .sub_heading_com:before {
+    border-color: var(--color-white);
+}
+
+.markets_list_inner {
+    background-color: var(--color-white);
+    min-height: 34.7rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.markets_list_loop {
+    margin-bottom: 2.4rem
+}
+
+.markets_name {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.markets_icon {
+    margin-bottom: 3.5rem
+}
+
+.hover_elm {
+    background-color: var(--color-skyblue);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.markets_name,.com-font,.markets_list_loop svg,.markets_list_loop svg path {
+    transition: 0.6s
+}
+
+.markets_list_loop:hover .markets_name,.markets_list_loop:hover .com-font {
+    color: var(--color-white);
+}
+
+.markets_list_loop:hover svg path {
+    fill: var(--color-white);
+}
+
+.markets_content {
+    position: relative;
+    z-index: 2
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transform: translateX(-50%);
+}
+

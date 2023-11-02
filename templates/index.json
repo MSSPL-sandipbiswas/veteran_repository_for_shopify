@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "homebanner":{
+            "type": "homebanner"
+        },
+        "homeabout":{
+            "type": "homeabout"
+        }
+    },
+    "order": ["homebanner" , "homeabout"]
+
+}

@@ -1,5 +1,3 @@
-
-sandip gggg
 <header class="bg-white">
     <div class="container mx-auto">
         <div class="header-inner flex justify-between items-center">
@@ -9,7 +7,7 @@ sandip gggg
             <nav class="primary-navigation" id="site-navigation">
                 <ul class="flex items-center menu-wrapper">
                     {% for link in linklists.main-menu.links %}
-                    <li class="text-blue {% if link.active == true %}active {% endif %}"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    <li class="text-blue {% if link.active == true %}current-menu-item {% endif %}"><a href="{{ link.url }}">{{ link.title }}</a></li>
                     {% endfor %}
                 </ul>
             </nav>
