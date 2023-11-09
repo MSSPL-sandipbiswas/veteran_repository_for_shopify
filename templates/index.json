@@ -22,11 +22,22 @@
             "bannersubheading": "Distributer",
             "link": ""
           }
+        },
+        "00d8be6d-c61b-4907-aad2-b0b4ed01ad21": {
+          "type": "slideimage-block",
+          "settings": {
+            "slideimage": "shopify:\/\/shop_images\/Vinyl-cat-image_e297de0c-3f47-4efb-84e5-9c3807199313.jpg",
+            "bannershortcontent": "test",
+            "bannerheading": "879",
+            "bannersubheading": "789",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "180429b8-2df0-49da-9aea-a5b909ad711b",
-        "12344cca-27c3-41d6-9582-615819a6a46b"
+        "12344cca-27c3-41d6-9582-615819a6a46b",
+        "00d8be6d-c61b-4907-aad2-b0b4ed01ad21"
       ],
       "settings": {
       }
