@@ -1,5 +1,21 @@
 {
   "sections": {
+    "1699948149682f62d2": {
+      "type": "apps",
+      "blocks": {
+        "8523acf2-48cb-4079-9c59-fa4ce2b84bae": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "8523acf2-48cb-4079-9c59-fa4ce2b84bae"
+      ],
+      "settings": {
+      }
+    },
     "homebanner": {
       "type": "homebanner",
       "blocks": {
@@ -54,6 +70,7 @@
     }
   },
   "order": [
+    "1699948149682f62d2",
     "homebanner",
     "homeabout"
   ]
